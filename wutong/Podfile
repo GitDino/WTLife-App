@@ -1,0 +1,31 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://git.wutonglife.com:82/iOS-Developer/WTSpec.git'
+
+platform :ios, '9.0'
+
+target 'wutong' do
+
+  pod 'YBImageBrowser'
+  pod 'SDWebImage', '4.3.3'
+  pod 'MJExtension'
+  pod 'MJRefresh'
+  pod 'M80AttributedLabel'
+  pod 'TZImagePickerController', '2.2.1'
+  pod 'RTRootNavigationController'
+  pod 'SGQRCode'
+  pod 'NIMSDK'
+  pod 'UMCCommon'
+  pod 'UMCPush'
+  pod 'UMCShare/UI'
+  pod 'UMCShare/Social/ReducedWeChat'
+  pod 'UMCShare/Social/QQ'
+  pod 'UMCShare/Social/Sina'
+  pod 'Bugly'
+  pod 'WTProgressHUD'
+  pod 'WTAlertManager'
+  pod 'WTHttpsManager', '0.3.0'
+  pod 'WTCategory'
+  pod 'WTInputTool'
+  pod 'WTSmallVideo'
+
+end

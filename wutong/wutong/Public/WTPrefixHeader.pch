@@ -1,0 +1,147 @@
+//
+//  WTPrefixHeader.pch
+//  wutong
+//
+//  Created by 魏欣宇 on 2018/7/29.
+//  Copyright © 2018年 wutonglife. All rights reserved.
+//
+
+#ifndef WTPrefixHeader_pch
+#define WTPrefixHeader_pch
+
+#ifdef __OBJC__
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define NSLog(...)
+#define debugMethod()
+#endif
+
+/**
+ 接口地址
+ 线上：https://api.wutonglife.com/life
+ */
+#define BASE_URL    @"https://api.wutonglife.com/life"
+
+/**
+ 前端页面地址
+ 线上：https://app.wutonglife.com
+ 本地：http://192.168.3.210:9999  http://192.168.0.116:9999
+ */
+#define Web_URL     @"https://app.wutonglife.com"
+
+/**
+ 网易云信AppKey
+ */
+#define NIM_AppKey   @"204756d1bb8804a21a19a8dfa50e2504"
+
+/**
+ 是否为 iPhone X
+ */
+#define WTIsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+/**
+ 屏幕宽度
+ */
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+
+/**
+ 屏幕高度
+ */
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+/**
+ 是否为iPhone X
+ */
+#define WTiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+/**
+ 图片异步加载(ImageView)
+ */
+#import <SDWebImage/UIImageView+WebCache.h>
+
+/**
+ 图片异步加载(Button)
+ */
+#import <SDWebImage/UIButton+WebCache.h>
+
+/**
+ 网易云信IM
+ */
+#import <NIMSDK/NIMSDK.h>
+
+/**
+ Json解析
+ */
+#import <MJExtension.h>
+
+/**
+ 网络请求
+ */
+#import <WTHttpSession.h>
+
+/**
+ 提示弹窗
+ */
+#import <WTProgressHUD.h>
+
+/**
+ 系统弹窗
+ */
+#import <WTAlertManager.h>
+
+/**
+ 图片
+ */
+#import <UIImage+WT.h>
+
+/**
+ 导航栏
+ */
+#import "WTBaseNavigationController.h"
+
+/**
+ 通知
+ */
+#import "WTNotificationCenter.h"
+
+/**
+ 用户权限信息
+ */
+#import "WTAuthorityManager.h"
+
+/**
+ 本地文件路径
+ */
+#import "WTFileLocationHelper.h"
+
+/**
+ 账户信息
+ */
+#import "WTAccountManager.h"
+
+/**
+ View扩充
+ */
+#import <UIView+WT.h>
+
+/**
+ 颜色扩充
+ */
+#import "UIColor+WT.h"
+
+/**
+ 字符串扩充
+ */
+#import "NSString+WT.h"
+
+/**
+ 字典扩充
+ */
+#import "NSDictionary+WT.h"
+
+#endif
+
+#endif /* WTPrefixHeader_pch */

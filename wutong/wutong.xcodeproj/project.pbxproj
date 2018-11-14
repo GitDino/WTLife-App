@@ -1,0 +1,1918 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		010708A82112F15900C71980 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010708A72112F15900C71980 /* CoreLocation.framework */; };
+		01084D78210E546600BC7C06 /* WTWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01084D77210E546600BC7C06 /* WTWebViewVC.m */; };
+		01084D7C210E54A500BC7C06 /* WTWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01084D7B210E54A500BC7C06 /* WTWebView.m */; };
+		010F4DE1210E5F59008F79A4 /* WTScriptMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 010F4DE0210E5F59008F79A4 /* WTScriptMessageHandler.m */; };
+		010F4DE4210E60F4008F79A4 /* WTWebViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 010F4DE3210E60F4008F79A4 /* WTWebViewConfiguration.m */; };
+		0118D6DB2114D0E900C0CACE /* WTLoginAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0118D6D92114D0E900C0CACE /* WTLoginAPI.m */; };
+		0118D6E12114D25900C0CACE /* WTAccountAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0118D6E02114D25900C0CACE /* WTAccountAPI.m */; };
+		0118D6E42114DFAA00C0CACE /* WTAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0118D6E32114DFAA00C0CACE /* WTAccountManager.m */; };
+		0118D6E82114EF3800C0CACE /* WTNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0118D6E72114EF3700C0CACE /* WTNotificationCenter.m */; };
+		0118D6EB211599DA00C0CACE /* WTChatCustomWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0118D6EA211599DA00C0CACE /* WTChatCustomWebViewVC.m */; };
+		0118D6EE2115B96D00C0CACE /* WTAppVersionAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0118D6ED2115B96D00C0CACE /* WTAppVersionAPI.m */; };
+		014346562150BEF1000C3013 /* WTFriendsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 014346552150BEF1000C3013 /* WTFriendsListVC.m */; };
+		0150C220215221040019F524 /* WTContactDataMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 0150C21F215221040019F524 /* WTContactDataMember.m */; };
+		0150C224215222CA0019F524 /* WTPinyinConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0150C223215222CA0019F524 /* WTPinyinConverter.m */; };
+		0150C227215226470019F524 /* WTSpellingCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0150C226215226470019F524 /* WTSpellingCenter.m */; };
+		0150C22A21522CF30019F524 /* WTGroupedDataCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0150C22921522CF30019F524 /* WTGroupedDataCollection.m */; };
+		0150C22D215230200019F524 /* WTGroupedContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 0150C22C215230200019F524 /* WTGroupedContacts.m */; };
+		0164845D2110B727002B1557 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0164845B2110B727002B1557 /* AlipaySDK.framework */; };
+		0164845E2110B727002B1557 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0164845C2110B727002B1557 /* AlipaySDK.bundle */; };
+		01652869211959BA003242D9 /* WTContactAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01652868211959BA003242D9 /* WTContactAccountModel.m */; };
+		01652872211A25BE003242D9 /* WTPlayVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01652871211A25BE003242D9 /* WTPlayVideoVC.m */; };
+		01652875211A25D9003242D9 /* WTPlayVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01652874211A25D9003242D9 /* WTPlayVideoView.m */; };
+		01701A27211050CD00D96FE3 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 01701A26211050CD00D96FE3 /* libc++.tbd */; };
+		01701A29211050E500D96FE3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 01701A28211050E500D96FE3 /* libz.tbd */; };
+		01701A2B2110532200D96FE3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01701A2A2110532200D96FE3 /* SystemConfiguration.framework */; };
+		01701A2D2110532A00D96FE3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01701A2C2110532A00D96FE3 /* CoreTelephony.framework */; };
+		01701A2F2110533300D96FE3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01701A2E2110533300D96FE3 /* QuartzCore.framework */; };
+		01701A312110536900D96FE3 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01701A302110536900D96FE3 /* CoreText.framework */; };
+		01701A332110537300D96FE3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01701A322110537300D96FE3 /* CoreGraphics.framework */; };
+		01701A352110537C00D96FE3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01701A342110537C00D96FE3 /* UIKit.framework */; };
+		01701A372110538500D96FE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01701A362110538500D96FE3 /* Foundation.framework */; };
+		01701A392110538D00D96FE3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01701A382110538D00D96FE3 /* CFNetwork.framework */; };
+		01701A3B2110539800D96FE3 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01701A3A2110539800D96FE3 /* CoreMotion.framework */; };
+		017478A121219C9F004CD739 /* WTGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 017478A021219C9F004CD739 /* WTGuidePageView.m */; };
+		017478A42121B8FD004CD739 /* WTAnotherWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 017478A32121B8FD004CD739 /* WTAnotherWebViewVC.m */; };
+		017DFC45211C1F550054E7B1 /* WTUserPictureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 017DFC44211C1F540054E7B1 /* WTUserPictureCell.m */; };
+		017DFC48211C20050054E7B1 /* WTUserTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 017DFC47211C20050054E7B1 /* WTUserTagCell.m */; };
+		017DFC4B211C20240054E7B1 /* WTUserOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 017DFC4A211C20240054E7B1 /* WTUserOrderCell.m */; };
+		017DFC4E211C22C00054E7B1 /* WTUserFunctionSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 017DFC4D211C22C00054E7B1 /* WTUserFunctionSectionView.m */; };
+		017DFC51211C24330054E7B1 /* WTUserPictureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 017DFC50211C24330054E7B1 /* WTUserPictureModel.m */; };
+		017DFC54211C28E80054E7B1 /* WTTagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 017DFC53211C28E80054E7B1 /* WTTagModel.m */; };
+		017DFC57211C49330054E7B1 /* WTTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 017DFC56211C49330054E7B1 /* WTTagsView.m */; };
+		01907601212E78AE00E0FE7B /* WTIMKitNotificationFirer.m in Sources */ = {isa = PBXBuildFile; fileRef = 01907600212E78AE00E0FE7B /* WTIMKitNotificationFirer.m */; };
+		01907604212E797900E0FE7B /* WTIMKitTimerHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 01907603212E797900E0FE7B /* WTIMKitTimerHolder.m */; };
+		01940821213E69CD00E2ED7B /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01940820213E69CD00E2ED7B /* libWeChatSDK.a */; };
+		01A4E1612125B0F000012FF4 /* WTGuidePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A4E1602125B0F000012FF4 /* WTGuidePageVC.m */; };
+		01A7A0392116E2B60037CBC1 /* WTUserHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A7A0382116E2B60037CBC1 /* WTUserHomeVC.m */; };
+		01A7A03C2116E2C80037CBC1 /* WTAdviserHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A7A03B2116E2C80037CBC1 /* WTAdviserHomeVC.m */; };
+		01A7A0402116E5E20037CBC1 /* WTUserHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A7A03F2116E5E20037CBC1 /* WTUserHomeTableView.m */; };
+		01A7A0432116EEBE0037CBC1 /* WTHeadIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A7A0422116EEBE0037CBC1 /* WTHeadIconCell.m */; };
+		01A7A04F2116F1540037CBC1 /* WTInfoNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A7A04E2116F1540037CBC1 /* WTInfoNormalCell.m */; };
+		01A7A0522116F46E0037CBC1 /* WTUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A7A0512116F46E0037CBC1 /* WTUserInfoModel.m */; };
+		01A7A0552116F8B80037CBC1 /* WTUserHomeCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A7A0542116F8B80037CBC1 /* WTUserHomeCellModel.m */; };
+		01A7A05C21176A170037CBC1 /* WTAdviserHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A7A05B21176A170037CBC1 /* WTAdviserHomeTableView.m */; };
+		01A7A05F21176CE00037CBC1 /* WTHomeToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A7A05E21176CE00037CBC1 /* WTHomeToolBar.m */; };
+		01A7A063211777030037CBC1 /* WTAboutUserConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A7A062211777030037CBC1 /* WTAboutUserConfigVC.m */; };
+		01A7A066211794FE0037CBC1 /* WTUploadImageAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A7A065211794FE0037CBC1 /* WTUploadImageAPI.m */; };
+		01A7A0692117A6520037CBC1 /* WTFriendsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A7A0682117A6520037CBC1 /* WTFriendsAPI.m */; };
+		01A7A06C2117B3650037CBC1 /* WTAdAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A7A06B2117B3650037CBC1 /* WTAdAPI.m */; };
+		01B16941211C62AF00A2625D /* WTUserOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B16940211C62AF00A2625D /* WTUserOrderModel.m */; };
+		01B16944211C636100A2625D /* WTGoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B16943211C636100A2625D /* WTGoodsModel.m */; };
+		01BAAC1F211C88170037861F /* WTTagAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BAAC1E211C88170037861F /* WTTagAPI.m */; };
+		01BAAC23211C91AB0037861F /* libTalkingData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BAAC22211C91AB0037861F /* libTalkingData.a */; };
+		01BAAC25211C91CA0037861F /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BAAC24211C91CA0037861F /* AdSupport.framework */; };
+		01BAAC27211C91E60037861F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BAAC26211C91E60037861F /* Security.framework */; };
+		01C6F60621589925001FB87A /* WTMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C6F60521589925001FB87A /* WTMessageVC.m */; };
+		01C7C95D2110A2770091A3E5 /* WTShareGoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C7C95C2110A2770091A3E5 /* WTShareGoodsModel.m */; };
+		01C7C9662110A6800091A3E5 /* NSDictionary+WT.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C7C9652110A6800091A3E5 /* NSDictionary+WT.m */; };
+		01C7C9692110A74B0091A3E5 /* NSString+WT.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C7C9682110A74B0091A3E5 /* NSString+WT.m */; };
+		01D0B05221110C8500F77C83 /* WTBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B04F21110C8400F77C83 /* WTBaseTableView.m */; };
+		01D0B05721110CF300F77C83 /* ALFPSStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B05521110CF300F77C83 /* ALFPSStatus.m */; };
+		01D0B05A21110D2F00F77C83 /* NIMKitEmoticon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 01D0B05821110D2E00F77C83 /* NIMKitEmoticon.bundle */; };
+		01D0B05B21110D2F00F77C83 /* NIMDemoChartlet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 01D0B05921110D2F00F77C83 /* NIMDemoChartlet.bundle */; };
+		01D0B06121110E3B00F77C83 /* WTSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B06021110E3B00F77C83 /* WTSession.m */; };
+		01D0B06621110E6000F77C83 /* WTSessionListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B06221110E6000F77C83 /* WTSessionListCell.m */; };
+		01D0B06721110E6000F77C83 /* WTSessionListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B06521110E6000F77C83 /* WTSessionListTableView.m */; };
+		01D0B06A21110EAD00F77C83 /* WTSessionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B06821110EAD00F77C83 /* WTSessionUtil.m */; };
+		01D0B07121110F5900F77C83 /* WTIMInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B06B21110F5900F77C83 /* WTIMInfo.m */; };
+		01D0B07221110F5900F77C83 /* WTDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B06E21110F5900F77C83 /* WTDataProvider.m */; };
+		01D0B07321110F5900F77C83 /* WTIMKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B06F21110F5900F77C83 /* WTIMKit.m */; };
+		01D0B0762111103500F77C83 /* WTSessionListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0742111103400F77C83 /* WTSessionListVC.m */; };
+		01D0B0792111113200F77C83 /* UIViewController+Analytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0782111113200F77C83 /* UIViewController+Analytics.m */; };
+		01D0B07E2111114300F77C83 /* WTShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B07B2111114200F77C83 /* WTShareManager.m */; };
+		01D0B07F2111114300F77C83 /* WTFileLocationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B07D2111114300F77C83 /* WTFileLocationHelper.m */; };
+		01D0B0822111117700F77C83 /* WTAuthorityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0802111117700F77C83 /* WTAuthorityManager.m */; };
+		01D0B0852111121800F77C83 /* M80AttributedLabel+WT.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0832111121800F77C83 /* M80AttributedLabel+WT.m */; };
+		01D0B090211112A300F77C83 /* WTAudioCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B08A211112A300F77C83 /* WTAudioCenter.m */; };
+		01D0B091211112A300F77C83 /* WTSessionMsgManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B08B211112A300F77C83 /* WTSessionMsgManager.m */; };
+		01D0B092211112A300F77C83 /* WTCustomAttachmentDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B08E211112A300F77C83 /* WTCustomAttachmentDecoder.m */; };
+		01D0B09D211112FE00F77C83 /* WTChatGoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B093211112FD00F77C83 /* WTChatGoodsModel.m */; };
+		01D0B09E211112FE00F77C83 /* WTTimestampModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B094211112FD00F77C83 /* WTTimestampModel.m */; };
+		01D0B09F211112FE00F77C83 /* WTMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B095211112FD00F77C83 /* WTMessageModel.m */; };
+		01D0B0A0211112FE00F77C83 /* WTChatOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B096211112FD00F77C83 /* WTChatOrderModel.m */; };
+		01D0B0A1211112FE00F77C83 /* WTChartletModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B09B211112FE00F77C83 /* WTChartletModel.m */; };
+		01D0B0AA211113D600F77C83 /* WTRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0A3211113D500F77C83 /* WTRefreshHeader.m */; };
+		01D0B0AB211113D600F77C83 /* WTMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0A5211113D500F77C83 /* WTMessageCell.m */; };
+		01D0B0AC211113D600F77C83 /* WTBubbleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0A6211113D500F77C83 /* WTBubbleImageView.m */; };
+		01D0B0AD211113D600F77C83 /* WTChatTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0A9211113D600F77C83 /* WTChatTableView.m */; };
+		01D0B0C42111145700F77C83 /* WTOrderMessageCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0B12111145300F77C83 /* WTOrderMessageCellView.m */; };
+		01D0B0C52111145700F77C83 /* WTImageMessageCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0B22111145300F77C83 /* WTImageMessageCellView.m */; };
+		01D0B0C62111145700F77C83 /* WTSystemMessageCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0B42111145400F77C83 /* WTSystemMessageCellView.m */; };
+		01D0B0C72111145700F77C83 /* WTTextMessageCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0B52111145400F77C83 /* WTTextMessageCellView.m */; };
+		01D0B0C82111145700F77C83 /* WTCommonMessageCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0B62111145400F77C83 /* WTCommonMessageCellView.m */; };
+		01D0B0C92111145700F77C83 /* WTTimeCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0B72111145400F77C83 /* WTTimeCellView.m */; };
+		01D0B0CA2111145700F77C83 /* WTVideoMessageCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0B82111145400F77C83 /* WTVideoMessageCellView.m */; };
+		01D0B0CB2111145700F77C83 /* WTGoodsMessageCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0BA2111145400F77C83 /* WTGoodsMessageCellView.m */; };
+		01D0B0CC2111145700F77C83 /* WTChartletMessageCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0BE2111145500F77C83 /* WTChartletMessageCellView.m */; };
+		01D0B0CD2111145700F77C83 /* WTAudioMessageCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0C32111145700F77C83 /* WTAudioMessageCellView.m */; };
+		01D0B0DE211114EB00F77C83 /* WTSystemMessageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0D0211114E900F77C83 /* WTSystemMessageContentView.m */; };
+		01D0B0DF211114EB00F77C83 /* WTAudioMessageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0D2211114E900F77C83 /* WTAudioMessageContentView.m */; };
+		01D0B0E0211114EB00F77C83 /* WTImageMessageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0D3211114E900F77C83 /* WTImageMessageContentView.m */; };
+		01D0B0E1211114EB00F77C83 /* WTGoodsMessageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0D6211114EA00F77C83 /* WTGoodsMessageContentView.m */; };
+		01D0B0E2211114EB00F77C83 /* WTChartletMessageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0D7211114EA00F77C83 /* WTChartletMessageContentView.m */; };
+		01D0B0E3211114EB00F77C83 /* WTOrderMessageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0D9211114EA00F77C83 /* WTOrderMessageContentView.m */; };
+		01D0B0E4211114EB00F77C83 /* WTTextMessageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0DC211114EA00F77C83 /* WTTextMessageContentView.m */; };
+		01D0B0E5211114EB00F77C83 /* WTVideoMessageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0DD211114EA00F77C83 /* WTVideoMessageContentView.m */; };
+		01D0B0E82111156900F77C83 /* WTSessionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0E72111156900F77C83 /* WTSessionVC.m */; };
+		01D0B0F1211199A000F77C83 /* WTPayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0F0211199A000F77C83 /* WTPayModel.m */; };
+		01D0B0F52111DE3900F77C83 /* WTScanCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0B0F42111DE3900F77C83 /* WTScanCodeVC.m */; };
+		01EC041A210DC06000BD5961 /* WTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EC0419210DC06000BD5961 /* WTAppDelegate.m */; };
+		01EC0422210DC06100BD5961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01EC0421210DC06100BD5961 /* Assets.xcassets */; };
+		01EC0425210DC06100BD5961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EC0423210DC06100BD5961 /* LaunchScreen.storyboard */; };
+		01EC0428210DC06100BD5961 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EC0427210DC06100BD5961 /* main.m */; };
+		01EC0432210DC06100BD5961 /* wutongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EC0431210DC06100BD5961 /* wutongTests.m */; };
+		01EC043D210DC06100BD5961 /* wutongUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EC043C210DC06100BD5961 /* wutongUITests.m */; };
+		01EC0452210DCAD600BD5961 /* WTBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EC0451210DCAD600BD5961 /* WTBaseNavigationController.m */; };
+		01EC0457210DDF2100BD5961 /* WTLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EC0456210DDF2100BD5961 /* WTLoginVC.m */; };
+		01EC0462210DE8C800BD5961 /* UIColor+WT.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EC0461210DE8C800BD5961 /* UIColor+WT.m */; };
+		EE9B9CA6C79E7A7FC8007DFC /* libPods-wutong.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7CB0A2D1FD42154CB4BA1 /* libPods-wutong.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01EC042E210DC06100BD5961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01EC040D210DC06000BD5961 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01EC0414210DC06000BD5961;
+			remoteInfo = wutong;
+		};
+		01EC0439210DC06100BD5961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01EC040D210DC06000BD5961 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01EC0414210DC06000BD5961;
+			remoteInfo = wutong;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		010708A72112F15900C71980 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		01084D76210E546600BC7C06 /* WTWebViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTWebViewVC.h; sourceTree = "<group>"; };
+		01084D77210E546600BC7C06 /* WTWebViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTWebViewVC.m; sourceTree = "<group>"; };
+		01084D7A210E54A500BC7C06 /* WTWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTWebView.h; sourceTree = "<group>"; };
+		01084D7B210E54A500BC7C06 /* WTWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTWebView.m; sourceTree = "<group>"; };
+		010F4DDF210E5F59008F79A4 /* WTScriptMessageHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTScriptMessageHandler.h; sourceTree = "<group>"; };
+		010F4DE0210E5F59008F79A4 /* WTScriptMessageHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTScriptMessageHandler.m; sourceTree = "<group>"; };
+		010F4DE2210E60F4008F79A4 /* WTWebViewConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTWebViewConfiguration.h; sourceTree = "<group>"; };
+		010F4DE3210E60F4008F79A4 /* WTWebViewConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTWebViewConfiguration.m; sourceTree = "<group>"; };
+		0118D6D92114D0E900C0CACE /* WTLoginAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTLoginAPI.m; sourceTree = "<group>"; };
+		0118D6DA2114D0E900C0CACE /* WTLoginAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTLoginAPI.h; sourceTree = "<group>"; };
+		0118D6DF2114D25900C0CACE /* WTAccountAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAccountAPI.h; sourceTree = "<group>"; };
+		0118D6E02114D25900C0CACE /* WTAccountAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAccountAPI.m; sourceTree = "<group>"; };
+		0118D6E22114DFAA00C0CACE /* WTAccountManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAccountManager.h; sourceTree = "<group>"; };
+		0118D6E32114DFAA00C0CACE /* WTAccountManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAccountManager.m; sourceTree = "<group>"; };
+		0118D6E62114EF3700C0CACE /* WTNotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTNotificationCenter.h; sourceTree = "<group>"; };
+		0118D6E72114EF3700C0CACE /* WTNotificationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTNotificationCenter.m; sourceTree = "<group>"; };
+		0118D6E9211599DA00C0CACE /* WTChatCustomWebViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTChatCustomWebViewVC.h; sourceTree = "<group>"; };
+		0118D6EA211599DA00C0CACE /* WTChatCustomWebViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTChatCustomWebViewVC.m; sourceTree = "<group>"; };
+		0118D6EC2115B96D00C0CACE /* WTAppVersionAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAppVersionAPI.h; sourceTree = "<group>"; };
+		0118D6ED2115B96D00C0CACE /* WTAppVersionAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAppVersionAPI.m; sourceTree = "<group>"; };
+		014346542150BEF1000C3013 /* WTFriendsListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTFriendsListVC.h; sourceTree = "<group>"; };
+		014346552150BEF1000C3013 /* WTFriendsListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTFriendsListVC.m; sourceTree = "<group>"; };
+		0150C21E215221040019F524 /* WTContactDataMember.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTContactDataMember.h; sourceTree = "<group>"; };
+		0150C21F215221040019F524 /* WTContactDataMember.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTContactDataMember.m; sourceTree = "<group>"; };
+		0150C222215222CA0019F524 /* WTPinyinConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTPinyinConverter.h; sourceTree = "<group>"; };
+		0150C223215222CA0019F524 /* WTPinyinConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTPinyinConverter.m; sourceTree = "<group>"; };
+		0150C225215226470019F524 /* WTSpellingCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTSpellingCenter.h; sourceTree = "<group>"; };
+		0150C226215226470019F524 /* WTSpellingCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTSpellingCenter.m; sourceTree = "<group>"; };
+		0150C22821522CF30019F524 /* WTGroupedDataCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTGroupedDataCollection.h; sourceTree = "<group>"; };
+		0150C22921522CF30019F524 /* WTGroupedDataCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTGroupedDataCollection.m; sourceTree = "<group>"; };
+		0150C22B215230200019F524 /* WTGroupedContacts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTGroupedContacts.h; sourceTree = "<group>"; };
+		0150C22C215230200019F524 /* WTGroupedContacts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTGroupedContacts.m; sourceTree = "<group>"; };
+		0164845B2110B727002B1557 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		0164845C2110B727002B1557 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		01652867211959BA003242D9 /* WTContactAccountModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTContactAccountModel.h; sourceTree = "<group>"; };
+		01652868211959BA003242D9 /* WTContactAccountModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTContactAccountModel.m; sourceTree = "<group>"; };
+		01652870211A25BE003242D9 /* WTPlayVideoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTPlayVideoVC.h; sourceTree = "<group>"; };
+		01652871211A25BE003242D9 /* WTPlayVideoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTPlayVideoVC.m; sourceTree = "<group>"; };
+		01652873211A25D9003242D9 /* WTPlayVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTPlayVideoView.h; sourceTree = "<group>"; };
+		01652874211A25D9003242D9 /* WTPlayVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTPlayVideoView.m; sourceTree = "<group>"; };
+		01701A26211050CD00D96FE3 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		01701A28211050E500D96FE3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		01701A2A2110532200D96FE3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		01701A2C2110532A00D96FE3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		01701A2E2110533300D96FE3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		01701A302110536900D96FE3 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		01701A322110537300D96FE3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		01701A342110537C00D96FE3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		01701A362110538500D96FE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		01701A382110538D00D96FE3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		01701A3A2110539800D96FE3 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		0174789F21219C9F004CD739 /* WTGuidePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTGuidePageView.h; sourceTree = "<group>"; };
+		017478A021219C9F004CD739 /* WTGuidePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTGuidePageView.m; sourceTree = "<group>"; };
+		017478A22121B8FD004CD739 /* WTAnotherWebViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAnotherWebViewVC.h; sourceTree = "<group>"; };
+		017478A32121B8FD004CD739 /* WTAnotherWebViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAnotherWebViewVC.m; sourceTree = "<group>"; };
+		017DFC43211C1F540054E7B1 /* WTUserPictureCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTUserPictureCell.h; sourceTree = "<group>"; };
+		017DFC44211C1F540054E7B1 /* WTUserPictureCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTUserPictureCell.m; sourceTree = "<group>"; };
+		017DFC46211C20050054E7B1 /* WTUserTagCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTUserTagCell.h; sourceTree = "<group>"; };
+		017DFC47211C20050054E7B1 /* WTUserTagCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTUserTagCell.m; sourceTree = "<group>"; };
+		017DFC49211C20240054E7B1 /* WTUserOrderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTUserOrderCell.h; sourceTree = "<group>"; };
+		017DFC4A211C20240054E7B1 /* WTUserOrderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTUserOrderCell.m; sourceTree = "<group>"; };
+		017DFC4C211C22C00054E7B1 /* WTUserFunctionSectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTUserFunctionSectionView.h; sourceTree = "<group>"; };
+		017DFC4D211C22C00054E7B1 /* WTUserFunctionSectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTUserFunctionSectionView.m; sourceTree = "<group>"; };
+		017DFC4F211C24330054E7B1 /* WTUserPictureModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTUserPictureModel.h; sourceTree = "<group>"; };
+		017DFC50211C24330054E7B1 /* WTUserPictureModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTUserPictureModel.m; sourceTree = "<group>"; };
+		017DFC52211C28E80054E7B1 /* WTTagModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTTagModel.h; sourceTree = "<group>"; };
+		017DFC53211C28E80054E7B1 /* WTTagModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTTagModel.m; sourceTree = "<group>"; };
+		017DFC55211C49330054E7B1 /* WTTagsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTTagsView.h; sourceTree = "<group>"; };
+		017DFC56211C49330054E7B1 /* WTTagsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTTagsView.m; sourceTree = "<group>"; };
+		019075FF212E78AE00E0FE7B /* WTIMKitNotificationFirer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTIMKitNotificationFirer.h; sourceTree = "<group>"; };
+		01907600212E78AE00E0FE7B /* WTIMKitNotificationFirer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTIMKitNotificationFirer.m; sourceTree = "<group>"; };
+		01907602212E797900E0FE7B /* WTIMKitTimerHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTIMKitTimerHolder.h; sourceTree = "<group>"; };
+		01907603212E797900E0FE7B /* WTIMKitTimerHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTIMKitTimerHolder.m; sourceTree = "<group>"; };
+		0194081D213E69CD00E2ED7B /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		0194081E213E69CD00E2ED7B /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		0194081F213E69CD00E2ED7B /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		01940820213E69CD00E2ED7B /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		01A4E15F2125B0F000012FF4 /* WTGuidePageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTGuidePageVC.h; sourceTree = "<group>"; };
+		01A4E1602125B0F000012FF4 /* WTGuidePageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTGuidePageVC.m; sourceTree = "<group>"; };
+		01A7A0372116E2B60037CBC1 /* WTUserHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTUserHomeVC.h; sourceTree = "<group>"; };
+		01A7A0382116E2B60037CBC1 /* WTUserHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTUserHomeVC.m; sourceTree = "<group>"; };
+		01A7A03A2116E2C80037CBC1 /* WTAdviserHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAdviserHomeVC.h; sourceTree = "<group>"; };
+		01A7A03B2116E2C80037CBC1 /* WTAdviserHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAdviserHomeVC.m; sourceTree = "<group>"; };
+		01A7A03E2116E5E20037CBC1 /* WTUserHomeTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTUserHomeTableView.h; sourceTree = "<group>"; };
+		01A7A03F2116E5E20037CBC1 /* WTUserHomeTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTUserHomeTableView.m; sourceTree = "<group>"; };
+		01A7A0412116EEBE0037CBC1 /* WTHeadIconCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTHeadIconCell.h; sourceTree = "<group>"; };
+		01A7A0422116EEBE0037CBC1 /* WTHeadIconCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTHeadIconCell.m; sourceTree = "<group>"; };
+		01A7A04D2116F1540037CBC1 /* WTInfoNormalCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTInfoNormalCell.h; sourceTree = "<group>"; };
+		01A7A04E2116F1540037CBC1 /* WTInfoNormalCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTInfoNormalCell.m; sourceTree = "<group>"; };
+		01A7A0502116F46E0037CBC1 /* WTUserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTUserInfoModel.h; sourceTree = "<group>"; };
+		01A7A0512116F46E0037CBC1 /* WTUserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTUserInfoModel.m; sourceTree = "<group>"; };
+		01A7A0532116F8B80037CBC1 /* WTUserHomeCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTUserHomeCellModel.h; sourceTree = "<group>"; };
+		01A7A0542116F8B80037CBC1 /* WTUserHomeCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTUserHomeCellModel.m; sourceTree = "<group>"; };
+		01A7A05A21176A170037CBC1 /* WTAdviserHomeTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAdviserHomeTableView.h; sourceTree = "<group>"; };
+		01A7A05B21176A170037CBC1 /* WTAdviserHomeTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAdviserHomeTableView.m; sourceTree = "<group>"; };
+		01A7A05D21176CE00037CBC1 /* WTHomeToolBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTHomeToolBar.h; sourceTree = "<group>"; };
+		01A7A05E21176CE00037CBC1 /* WTHomeToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTHomeToolBar.m; sourceTree = "<group>"; };
+		01A7A061211777030037CBC1 /* WTAboutUserConfigVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAboutUserConfigVC.h; sourceTree = "<group>"; };
+		01A7A062211777030037CBC1 /* WTAboutUserConfigVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAboutUserConfigVC.m; sourceTree = "<group>"; };
+		01A7A064211794FE0037CBC1 /* WTUploadImageAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTUploadImageAPI.h; sourceTree = "<group>"; };
+		01A7A065211794FE0037CBC1 /* WTUploadImageAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTUploadImageAPI.m; sourceTree = "<group>"; };
+		01A7A0672117A6520037CBC1 /* WTFriendsAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTFriendsAPI.h; sourceTree = "<group>"; };
+		01A7A0682117A6520037CBC1 /* WTFriendsAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTFriendsAPI.m; sourceTree = "<group>"; };
+		01A7A06A2117B3650037CBC1 /* WTAdAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAdAPI.h; sourceTree = "<group>"; };
+		01A7A06B2117B3650037CBC1 /* WTAdAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAdAPI.m; sourceTree = "<group>"; };
+		01B1693F211C62AF00A2625D /* WTUserOrderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTUserOrderModel.h; sourceTree = "<group>"; };
+		01B16940211C62AF00A2625D /* WTUserOrderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTUserOrderModel.m; sourceTree = "<group>"; };
+		01B16942211C636100A2625D /* WTGoodsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTGoodsModel.h; sourceTree = "<group>"; };
+		01B16943211C636100A2625D /* WTGoodsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTGoodsModel.m; sourceTree = "<group>"; };
+		01BAAC1D211C88170037861F /* WTTagAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTTagAPI.h; sourceTree = "<group>"; };
+		01BAAC1E211C88170037861F /* WTTagAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTTagAPI.m; sourceTree = "<group>"; };
+		01BAAC21211C91AA0037861F /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingData.h; sourceTree = "<group>"; };
+		01BAAC22211C91AB0037861F /* libTalkingData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTalkingData.a; sourceTree = "<group>"; };
+		01BAAC24211C91CA0037861F /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		01BAAC26211C91E60037861F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		01C6F60421589925001FB87A /* WTMessageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMessageVC.h; sourceTree = "<group>"; };
+		01C6F60521589925001FB87A /* WTMessageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMessageVC.m; sourceTree = "<group>"; };
+		01C7C95B2110A2770091A3E5 /* WTShareGoodsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTShareGoodsModel.h; sourceTree = "<group>"; };
+		01C7C95C2110A2770091A3E5 /* WTShareGoodsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTShareGoodsModel.m; sourceTree = "<group>"; };
+		01C7C9642110A6800091A3E5 /* NSDictionary+WT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+WT.h"; sourceTree = "<group>"; };
+		01C7C9652110A6800091A3E5 /* NSDictionary+WT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+WT.m"; sourceTree = "<group>"; };
+		01C7C9672110A74B0091A3E5 /* NSString+WT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WT.h"; sourceTree = "<group>"; };
+		01C7C9682110A74B0091A3E5 /* NSString+WT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WT.m"; sourceTree = "<group>"; };
+		01D0B04F21110C8400F77C83 /* WTBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTBaseTableView.m; sourceTree = "<group>"; };
+		01D0B05121110C8400F77C83 /* WTBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTBaseTableView.h; sourceTree = "<group>"; };
+		01D0B05321110CAD00F77C83 /* BaseTableViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewProtocol.h; sourceTree = "<group>"; };
+		01D0B05521110CF300F77C83 /* ALFPSStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALFPSStatus.m; sourceTree = "<group>"; };
+		01D0B05621110CF300F77C83 /* ALFPSStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALFPSStatus.h; sourceTree = "<group>"; };
+		01D0B05821110D2E00F77C83 /* NIMKitEmoticon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NIMKitEmoticon.bundle; sourceTree = "<group>"; };
+		01D0B05921110D2F00F77C83 /* NIMDemoChartlet.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NIMDemoChartlet.bundle; sourceTree = "<group>"; };
+		01D0B05F21110E3B00F77C83 /* WTSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSession.h; sourceTree = "<group>"; };
+		01D0B06021110E3B00F77C83 /* WTSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSession.m; sourceTree = "<group>"; };
+		01D0B06221110E6000F77C83 /* WTSessionListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSessionListCell.m; sourceTree = "<group>"; };
+		01D0B06321110E6000F77C83 /* WTSessionListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSessionListCell.h; sourceTree = "<group>"; };
+		01D0B06421110E6000F77C83 /* WTSessionListTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSessionListTableView.h; sourceTree = "<group>"; };
+		01D0B06521110E6000F77C83 /* WTSessionListTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSessionListTableView.m; sourceTree = "<group>"; };
+		01D0B06821110EAD00F77C83 /* WTSessionUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSessionUtil.m; sourceTree = "<group>"; };
+		01D0B06921110EAD00F77C83 /* WTSessionUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSessionUtil.h; sourceTree = "<group>"; };
+		01D0B06B21110F5900F77C83 /* WTIMInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTIMInfo.m; sourceTree = "<group>"; };
+		01D0B06C21110F5900F77C83 /* WTIMKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTIMKit.h; sourceTree = "<group>"; };
+		01D0B06D21110F5900F77C83 /* WTIMInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTIMInfo.h; sourceTree = "<group>"; };
+		01D0B06E21110F5900F77C83 /* WTDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTDataProvider.m; sourceTree = "<group>"; };
+		01D0B06F21110F5900F77C83 /* WTIMKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTIMKit.m; sourceTree = "<group>"; };
+		01D0B07021110F5900F77C83 /* WTDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTDataProvider.h; sourceTree = "<group>"; };
+		01D0B0742111103400F77C83 /* WTSessionListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSessionListVC.m; sourceTree = "<group>"; };
+		01D0B0752111103500F77C83 /* WTSessionListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSessionListVC.h; sourceTree = "<group>"; };
+		01D0B0772111113200F77C83 /* UIViewController+Analytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Analytics.h"; sourceTree = "<group>"; };
+		01D0B0782111113200F77C83 /* UIViewController+Analytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Analytics.m"; sourceTree = "<group>"; };
+		01D0B07A2111114200F77C83 /* WTFileLocationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFileLocationHelper.h; sourceTree = "<group>"; };
+		01D0B07B2111114200F77C83 /* WTShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTShareManager.m; sourceTree = "<group>"; };
+		01D0B07C2111114200F77C83 /* WTShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTShareManager.h; sourceTree = "<group>"; };
+		01D0B07D2111114300F77C83 /* WTFileLocationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFileLocationHelper.m; sourceTree = "<group>"; };
+		01D0B0802111117700F77C83 /* WTAuthorityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTAuthorityManager.m; sourceTree = "<group>"; };
+		01D0B0812111117700F77C83 /* WTAuthorityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAuthorityManager.h; sourceTree = "<group>"; };
+		01D0B0832111121800F77C83 /* M80AttributedLabel+WT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "M80AttributedLabel+WT.m"; sourceTree = "<group>"; };
+		01D0B0842111121800F77C83 /* M80AttributedLabel+WT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "M80AttributedLabel+WT.h"; sourceTree = "<group>"; };
+		01D0B089211112A200F77C83 /* WTCustomAttachmentDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTCustomAttachmentDecoder.h; sourceTree = "<group>"; };
+		01D0B08A211112A300F77C83 /* WTAudioCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTAudioCenter.m; sourceTree = "<group>"; };
+		01D0B08B211112A300F77C83 /* WTSessionMsgManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSessionMsgManager.m; sourceTree = "<group>"; };
+		01D0B08C211112A300F77C83 /* WTChatTableViewProtcol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTChatTableViewProtcol.h; sourceTree = "<group>"; };
+		01D0B08D211112A300F77C83 /* WTSessionMsgManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSessionMsgManager.h; sourceTree = "<group>"; };
+		01D0B08E211112A300F77C83 /* WTCustomAttachmentDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTCustomAttachmentDecoder.m; sourceTree = "<group>"; };
+		01D0B08F211112A300F77C83 /* WTAudioCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAudioCenter.h; sourceTree = "<group>"; };
+		01D0B093211112FD00F77C83 /* WTChatGoodsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTChatGoodsModel.m; sourceTree = "<group>"; };
+		01D0B094211112FD00F77C83 /* WTTimestampModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTimestampModel.m; sourceTree = "<group>"; };
+		01D0B095211112FD00F77C83 /* WTMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMessageModel.m; sourceTree = "<group>"; };
+		01D0B096211112FD00F77C83 /* WTChatOrderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTChatOrderModel.m; sourceTree = "<group>"; };
+		01D0B097211112FE00F77C83 /* WTChatGoodsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTChatGoodsModel.h; sourceTree = "<group>"; };
+		01D0B098211112FE00F77C83 /* WTTimestampModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTimestampModel.h; sourceTree = "<group>"; };
+		01D0B099211112FE00F77C83 /* WTChartletModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTChartletModel.h; sourceTree = "<group>"; };
+		01D0B09A211112FE00F77C83 /* WTMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMessageModel.h; sourceTree = "<group>"; };
+		01D0B09B211112FE00F77C83 /* WTChartletModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTChartletModel.m; sourceTree = "<group>"; };
+		01D0B09C211112FE00F77C83 /* WTChatOrderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTChatOrderModel.h; sourceTree = "<group>"; };
+		01D0B0A2211113D500F77C83 /* WTRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTRefreshHeader.h; sourceTree = "<group>"; };
+		01D0B0A3211113D500F77C83 /* WTRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTRefreshHeader.m; sourceTree = "<group>"; };
+		01D0B0A4211113D500F77C83 /* WTMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMessageCell.h; sourceTree = "<group>"; };
+		01D0B0A5211113D500F77C83 /* WTMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMessageCell.m; sourceTree = "<group>"; };
+		01D0B0A6211113D500F77C83 /* WTBubbleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTBubbleImageView.m; sourceTree = "<group>"; };
+		01D0B0A7211113D500F77C83 /* WTBubbleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTBubbleImageView.h; sourceTree = "<group>"; };
+		01D0B0A8211113D500F77C83 /* WTChatTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTChatTableView.h; sourceTree = "<group>"; };
+		01D0B0A9211113D600F77C83 /* WTChatTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTChatTableView.m; sourceTree = "<group>"; };
+		01D0B0B02111145300F77C83 /* WTTextMessageCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTextMessageCellView.h; sourceTree = "<group>"; };
+		01D0B0B12111145300F77C83 /* WTOrderMessageCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTOrderMessageCellView.m; sourceTree = "<group>"; };
+		01D0B0B22111145300F77C83 /* WTImageMessageCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTImageMessageCellView.m; sourceTree = "<group>"; };
+		01D0B0B32111145400F77C83 /* WTCommonMessageCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTCommonMessageCellView.h; sourceTree = "<group>"; };
+		01D0B0B42111145400F77C83 /* WTSystemMessageCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSystemMessageCellView.m; sourceTree = "<group>"; };
+		01D0B0B52111145400F77C83 /* WTTextMessageCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTextMessageCellView.m; sourceTree = "<group>"; };
+		01D0B0B62111145400F77C83 /* WTCommonMessageCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTCommonMessageCellView.m; sourceTree = "<group>"; };
+		01D0B0B72111145400F77C83 /* WTTimeCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTimeCellView.m; sourceTree = "<group>"; };
+		01D0B0B82111145400F77C83 /* WTVideoMessageCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTVideoMessageCellView.m; sourceTree = "<group>"; };
+		01D0B0B92111145400F77C83 /* WTTimeCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTimeCellView.h; sourceTree = "<group>"; };
+		01D0B0BA2111145400F77C83 /* WTGoodsMessageCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTGoodsMessageCellView.m; sourceTree = "<group>"; };
+		01D0B0BB2111145500F77C83 /* WTImageMessageCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTImageMessageCellView.h; sourceTree = "<group>"; };
+		01D0B0BC2111145500F77C83 /* WTOrderMessageCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTOrderMessageCellView.h; sourceTree = "<group>"; };
+		01D0B0BD2111145500F77C83 /* WTVideoMessageCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTVideoMessageCellView.h; sourceTree = "<group>"; };
+		01D0B0BE2111145500F77C83 /* WTChartletMessageCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTChartletMessageCellView.m; sourceTree = "<group>"; };
+		01D0B0BF2111145500F77C83 /* WTChartletMessageCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTChartletMessageCellView.h; sourceTree = "<group>"; };
+		01D0B0C02111145500F77C83 /* WTGoodsMessageCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTGoodsMessageCellView.h; sourceTree = "<group>"; };
+		01D0B0C12111145600F77C83 /* WTSystemMessageCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSystemMessageCellView.h; sourceTree = "<group>"; };
+		01D0B0C22111145600F77C83 /* WTAudioMessageCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAudioMessageCellView.h; sourceTree = "<group>"; };
+		01D0B0C32111145700F77C83 /* WTAudioMessageCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTAudioMessageCellView.m; sourceTree = "<group>"; };
+		01D0B0CE211114E900F77C83 /* WTSystemMessageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSystemMessageContentView.h; sourceTree = "<group>"; };
+		01D0B0CF211114E900F77C83 /* WTOrderMessageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTOrderMessageContentView.h; sourceTree = "<group>"; };
+		01D0B0D0211114E900F77C83 /* WTSystemMessageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSystemMessageContentView.m; sourceTree = "<group>"; };
+		01D0B0D1211114E900F77C83 /* WTTextMessageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTextMessageContentView.h; sourceTree = "<group>"; };
+		01D0B0D2211114E900F77C83 /* WTAudioMessageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTAudioMessageContentView.m; sourceTree = "<group>"; };
+		01D0B0D3211114E900F77C83 /* WTImageMessageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTImageMessageContentView.m; sourceTree = "<group>"; };
+		01D0B0D4211114EA00F77C83 /* WTVideoMessageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTVideoMessageContentView.h; sourceTree = "<group>"; };
+		01D0B0D5211114EA00F77C83 /* WTChartletMessageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTChartletMessageContentView.h; sourceTree = "<group>"; };
+		01D0B0D6211114EA00F77C83 /* WTGoodsMessageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTGoodsMessageContentView.m; sourceTree = "<group>"; };
+		01D0B0D7211114EA00F77C83 /* WTChartletMessageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTChartletMessageContentView.m; sourceTree = "<group>"; };
+		01D0B0D8211114EA00F77C83 /* WTAudioMessageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAudioMessageContentView.h; sourceTree = "<group>"; };
+		01D0B0D9211114EA00F77C83 /* WTOrderMessageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTOrderMessageContentView.m; sourceTree = "<group>"; };
+		01D0B0DA211114EA00F77C83 /* WTImageMessageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTImageMessageContentView.h; sourceTree = "<group>"; };
+		01D0B0DB211114EA00F77C83 /* WTGoodsMessageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTGoodsMessageContentView.h; sourceTree = "<group>"; };
+		01D0B0DC211114EA00F77C83 /* WTTextMessageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTextMessageContentView.m; sourceTree = "<group>"; };
+		01D0B0DD211114EA00F77C83 /* WTVideoMessageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTVideoMessageContentView.m; sourceTree = "<group>"; };
+		01D0B0E62111156900F77C83 /* WTSessionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSessionVC.h; sourceTree = "<group>"; };
+		01D0B0E72111156900F77C83 /* WTSessionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSessionVC.m; sourceTree = "<group>"; };
+		01D0B0EB21117E6200F77C83 /* wutong.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wutong.entitlements; sourceTree = "<group>"; };
+		01D0B0EF211199A000F77C83 /* WTPayModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTPayModel.h; sourceTree = "<group>"; };
+		01D0B0F0211199A000F77C83 /* WTPayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTPayModel.m; sourceTree = "<group>"; };
+		01D0B0F32111DE3900F77C83 /* WTScanCodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTScanCodeVC.h; sourceTree = "<group>"; };
+		01D0B0F42111DE3900F77C83 /* WTScanCodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTScanCodeVC.m; sourceTree = "<group>"; };
+		01EC0415210DC06000BD5961 /* wutong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wutong.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01EC0418210DC06000BD5961 /* WTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAppDelegate.h; sourceTree = "<group>"; };
+		01EC0419210DC06000BD5961 /* WTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAppDelegate.m; sourceTree = "<group>"; };
+		01EC0421210DC06100BD5961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01EC0424210DC06100BD5961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01EC0426210DC06100BD5961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01EC0427210DC06100BD5961 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		01EC042D210DC06100BD5961 /* wutongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wutongTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01EC0431210DC06100BD5961 /* wutongTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wutongTests.m; sourceTree = "<group>"; };
+		01EC0433210DC06100BD5961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01EC0438210DC06100BD5961 /* wutongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wutongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01EC043C210DC06100BD5961 /* wutongUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wutongUITests.m; sourceTree = "<group>"; };
+		01EC043E210DC06100BD5961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01EC0450210DCAD600BD5961 /* WTBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTBaseNavigationController.h; sourceTree = "<group>"; };
+		01EC0451210DCAD600BD5961 /* WTBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTBaseNavigationController.m; sourceTree = "<group>"; };
+		01EC0455210DDF2100BD5961 /* WTLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTLoginVC.h; sourceTree = "<group>"; };
+		01EC0456210DDF2100BD5961 /* WTLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTLoginVC.m; sourceTree = "<group>"; };
+		01EC0459210DE04600BD5961 /* WTPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTPrefixHeader.pch; sourceTree = "<group>"; };
+		01EC0460210DE8C800BD5961 /* UIColor+WT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+WT.h"; sourceTree = "<group>"; };
+		01EC0461210DE8C800BD5961 /* UIColor+WT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WT.m"; sourceTree = "<group>"; };
+		3C5A64A08A05E3546E17A7B5 /* Pods-wutong.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wutong.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wutong/Pods-wutong.debug.xcconfig"; sourceTree = "<group>"; };
+		40C7CB0A2D1FD42154CB4BA1 /* libPods-wutong.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wutong.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19BDCD0E521D23C50B8C891 /* Pods-wutong.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wutong.release.xcconfig"; path = "Pods/Target Support Files/Pods-wutong/Pods-wutong.release.xcconfig"; sourceTree = "<group>"; };
+		E94A37E450F98DD170D2E3A6 /* Pods-wutong.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wutong.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-wutong/Pods-wutong.adhoc.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01EC0412210DC06000BD5961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01701A27211050CD00D96FE3 /* libc++.tbd in Frameworks */,
+				01701A29211050E500D96FE3 /* libz.tbd in Frameworks */,
+				01940821213E69CD00E2ED7B /* libWeChatSDK.a in Frameworks */,
+				01701A2B2110532200D96FE3 /* SystemConfiguration.framework in Frameworks */,
+				01BAAC27211C91E60037861F /* Security.framework in Frameworks */,
+				01701A3B2110539800D96FE3 /* CoreMotion.framework in Frameworks */,
+				01701A2D2110532A00D96FE3 /* CoreTelephony.framework in Frameworks */,
+				01BAAC25211C91CA0037861F /* AdSupport.framework in Frameworks */,
+				010708A82112F15900C71980 /* CoreLocation.framework in Frameworks */,
+				01701A392110538D00D96FE3 /* CFNetwork.framework in Frameworks */,
+				01701A372110538500D96FE3 /* Foundation.framework in Frameworks */,
+				01701A352110537C00D96FE3 /* UIKit.framework in Frameworks */,
+				01701A332110537300D96FE3 /* CoreGraphics.framework in Frameworks */,
+				01701A312110536900D96FE3 /* CoreText.framework in Frameworks */,
+				01BAAC23211C91AB0037861F /* libTalkingData.a in Frameworks */,
+				01701A2F2110533300D96FE3 /* QuartzCore.framework in Frameworks */,
+				0164845D2110B727002B1557 /* AlipaySDK.framework in Frameworks */,
+				EE9B9CA6C79E7A7FC8007DFC /* libPods-wutong.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01EC042A210DC06100BD5961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01EC0435210DC06100BD5961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01084D60210E312200BC7C06 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0118D6DA2114D0E900C0CACE /* WTLoginAPI.h */,
+				0118D6D92114D0E900C0CACE /* WTLoginAPI.m */,
+				0118D6DF2114D25900C0CACE /* WTAccountAPI.h */,
+				0118D6E02114D25900C0CACE /* WTAccountAPI.m */,
+				0118D6EC2115B96D00C0CACE /* WTAppVersionAPI.h */,
+				0118D6ED2115B96D00C0CACE /* WTAppVersionAPI.m */,
+				01A7A064211794FE0037CBC1 /* WTUploadImageAPI.h */,
+				01A7A065211794FE0037CBC1 /* WTUploadImageAPI.m */,
+				01A7A0672117A6520037CBC1 /* WTFriendsAPI.h */,
+				01A7A0682117A6520037CBC1 /* WTFriendsAPI.m */,
+				01A7A06A2117B3650037CBC1 /* WTAdAPI.h */,
+				01A7A06B2117B3650037CBC1 /* WTAdAPI.m */,
+				01BAAC1D211C88170037861F /* WTTagAPI.h */,
+				01BAAC1E211C88170037861F /* WTTagAPI.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		01084D6D210E42D800BC7C06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0118D6E22114DFAA00C0CACE /* WTAccountManager.h */,
+				0118D6E32114DFAA00C0CACE /* WTAccountManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		01084D74210E540800BC7C06 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				010F4DDE210E5F37008F79A4 /* Model */,
+				01084D79210E546E00BC7C06 /* View */,
+				01084D75210E543E00BC7C06 /* Controller */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		01084D75210E543E00BC7C06 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				01084D76210E546600BC7C06 /* WTWebViewVC.h */,
+				01084D77210E546600BC7C06 /* WTWebViewVC.m */,
+				0118D6E9211599DA00C0CACE /* WTChatCustomWebViewVC.h */,
+				0118D6EA211599DA00C0CACE /* WTChatCustomWebViewVC.m */,
+				017478A22121B8FD004CD739 /* WTAnotherWebViewVC.h */,
+				017478A32121B8FD004CD739 /* WTAnotherWebViewVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		01084D79210E546E00BC7C06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01084D7A210E54A500BC7C06 /* WTWebView.h */,
+				01084D7B210E54A500BC7C06 /* WTWebView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		010F4DDE210E5F37008F79A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				010F4DDF210E5F59008F79A4 /* WTScriptMessageHandler.h */,
+				010F4DE0210E5F59008F79A4 /* WTScriptMessageHandler.m */,
+				010F4DE2210E60F4008F79A4 /* WTWebViewConfiguration.h */,
+				010F4DE3210E60F4008F79A4 /* WTWebViewConfiguration.m */,
+				01C7C95B2110A2770091A3E5 /* WTShareGoodsModel.h */,
+				01C7C95C2110A2770091A3E5 /* WTShareGoodsModel.m */,
+				01D0B0EF211199A000F77C83 /* WTPayModel.h */,
+				01D0B0F0211199A000F77C83 /* WTPayModel.m */,
+				01652867211959BA003242D9 /* WTContactAccountModel.h */,
+				01652868211959BA003242D9 /* WTContactAccountModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0118D6E52114EEE500C0CACE /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				0118D6E62114EF3700C0CACE /* WTNotificationCenter.h */,
+				0118D6E72114EF3700C0CACE /* WTNotificationCenter.m */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		014346502150BE9E000C3013 /* FriendsList */ = {
+			isa = PBXGroup;
+			children = (
+				014346532150BED1000C3013 /* Model */,
+				014346522150BECB000C3013 /* View */,
+				014346512150BEC3000C3013 /* Controller */,
+			);
+			path = FriendsList;
+			sourceTree = "<group>";
+		};
+		014346512150BEC3000C3013 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				014346542150BEF1000C3013 /* WTFriendsListVC.h */,
+				014346552150BEF1000C3013 /* WTFriendsListVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		014346522150BECB000C3013 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		014346532150BED1000C3013 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0150C21E215221040019F524 /* WTContactDataMember.h */,
+				0150C21F215221040019F524 /* WTContactDataMember.m */,
+				0150C22821522CF30019F524 /* WTGroupedDataCollection.h */,
+				0150C22921522CF30019F524 /* WTGroupedDataCollection.m */,
+				0150C22B215230200019F524 /* WTGroupedContacts.h */,
+				0150C22C215230200019F524 /* WTGroupedContacts.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0150C2212152227C0019F524 /* Spelling */ = {
+			isa = PBXGroup;
+			children = (
+				0150C222215222CA0019F524 /* WTPinyinConverter.h */,
+				0150C223215222CA0019F524 /* WTPinyinConverter.m */,
+				0150C225215226470019F524 /* WTSpellingCenter.h */,
+				0150C226215226470019F524 /* WTSpellingCenter.m */,
+			);
+			path = Spelling;
+			sourceTree = "<group>";
+		};
+		0165286D211A255E003242D9 /* WTWatchVideo */ = {
+			isa = PBXGroup;
+			children = (
+				0165286F211A259E003242D9 /* View */,
+				0165286E211A2596003242D9 /* Controller */,
+			);
+			path = WTWatchVideo;
+			sourceTree = "<group>";
+		};
+		0165286E211A2596003242D9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				01652870211A25BE003242D9 /* WTPlayVideoVC.h */,
+				01652871211A25BE003242D9 /* WTPlayVideoVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0165286F211A259E003242D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01652873211A25D9003242D9 /* WTPlayVideoView.h */,
+				01652874211A25D9003242D9 /* WTPlayVideoView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		01701A2121104F2900D96FE3 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				0194081C213E69CD00E2ED7B /* Wechat */,
+				01BAAC20211C91840037861F /* TalkingData */,
+				0164845C2110B727002B1557 /* AlipaySDK.bundle */,
+				0164845B2110B727002B1557 /* AlipaySDK.framework */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		0174789B21216807004CD739 /* GuidePage */ = {
+			isa = PBXGroup;
+			children = (
+				0174789F21219C9F004CD739 /* WTGuidePageView.h */,
+				017478A021219C9F004CD739 /* WTGuidePageView.m */,
+				01A4E15F2125B0F000012FF4 /* WTGuidePageVC.h */,
+				01A4E1602125B0F000012FF4 /* WTGuidePageVC.m */,
+			);
+			path = GuidePage;
+			sourceTree = "<group>";
+		};
+		0194081C213E69CD00E2ED7B /* Wechat */ = {
+			isa = PBXGroup;
+			children = (
+				0194081D213E69CD00E2ED7B /* WXApi.h */,
+				0194081E213E69CD00E2ED7B /* WXApiObject.h */,
+				0194081F213E69CD00E2ED7B /* WechatAuthSDK.h */,
+				01940820213E69CD00E2ED7B /* libWeChatSDK.a */,
+			);
+			path = Wechat;
+			sourceTree = "<group>";
+		};
+		01A7A0322116E2490037CBC1 /* UserHome */ = {
+			isa = PBXGroup;
+			children = (
+				01A7A0342116E2840037CBC1 /* UserHome */,
+				01A7A0332116E2780037CBC1 /* AdviserHome */,
+				01A7A060211776C80037CBC1 /* WTAboutConfig */,
+			);
+			path = UserHome;
+			sourceTree = "<group>";
+		};
+		01A7A0332116E2780037CBC1 /* AdviserHome */ = {
+			isa = PBXGroup;
+			children = (
+				01A7A059211769F50037CBC1 /* View */,
+				01A7A0362116E29B0037CBC1 /* Controller */,
+			);
+			path = AdviserHome;
+			sourceTree = "<group>";
+		};
+		01A7A0342116E2840037CBC1 /* UserHome */ = {
+			isa = PBXGroup;
+			children = (
+				01A7A0502116F46E0037CBC1 /* WTUserInfoModel.h */,
+				01A7A0512116F46E0037CBC1 /* WTUserInfoModel.m */,
+				017DFC4F211C24330054E7B1 /* WTUserPictureModel.h */,
+				017DFC50211C24330054E7B1 /* WTUserPictureModel.m */,
+				01B1693F211C62AF00A2625D /* WTUserOrderModel.h */,
+				01B16940211C62AF00A2625D /* WTUserOrderModel.m */,
+				01B16942211C636100A2625D /* WTGoodsModel.h */,
+				01B16943211C636100A2625D /* WTGoodsModel.m */,
+				01A7A0532116F8B80037CBC1 /* WTUserHomeCellModel.h */,
+				01A7A0542116F8B80037CBC1 /* WTUserHomeCellModel.m */,
+				01A7A0412116EEBE0037CBC1 /* WTHeadIconCell.h */,
+				01A7A0422116EEBE0037CBC1 /* WTHeadIconCell.m */,
+				01A7A04D2116F1540037CBC1 /* WTInfoNormalCell.h */,
+				01A7A04E2116F1540037CBC1 /* WTInfoNormalCell.m */,
+				01A7A05D21176CE00037CBC1 /* WTHomeToolBar.h */,
+				01A7A05E21176CE00037CBC1 /* WTHomeToolBar.m */,
+				01A7A03D2116E5BB0037CBC1 /* View */,
+				01A7A0352116E2930037CBC1 /* Controller */,
+			);
+			path = UserHome;
+			sourceTree = "<group>";
+		};
+		01A7A0352116E2930037CBC1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				01A7A0372116E2B60037CBC1 /* WTUserHomeVC.h */,
+				01A7A0382116E2B60037CBC1 /* WTUserHomeVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		01A7A0362116E29B0037CBC1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				01A7A03A2116E2C80037CBC1 /* WTAdviserHomeVC.h */,
+				01A7A03B2116E2C80037CBC1 /* WTAdviserHomeVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		01A7A03D2116E5BB0037CBC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01A7A03E2116E5E20037CBC1 /* WTUserHomeTableView.h */,
+				01A7A03F2116E5E20037CBC1 /* WTUserHomeTableView.m */,
+				017DFC4C211C22C00054E7B1 /* WTUserFunctionSectionView.h */,
+				017DFC4D211C22C00054E7B1 /* WTUserFunctionSectionView.m */,
+				017DFC43211C1F540054E7B1 /* WTUserPictureCell.h */,
+				017DFC44211C1F540054E7B1 /* WTUserPictureCell.m */,
+				017DFC46211C20050054E7B1 /* WTUserTagCell.h */,
+				017DFC47211C20050054E7B1 /* WTUserTagCell.m */,
+				017DFC49211C20240054E7B1 /* WTUserOrderCell.h */,
+				017DFC4A211C20240054E7B1 /* WTUserOrderCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		01A7A059211769F50037CBC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01A7A05A21176A170037CBC1 /* WTAdviserHomeTableView.h */,
+				01A7A05B21176A170037CBC1 /* WTAdviserHomeTableView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		01A7A060211776C80037CBC1 /* WTAboutConfig */ = {
+			isa = PBXGroup;
+			children = (
+				01A7A061211777030037CBC1 /* WTAboutUserConfigVC.h */,
+				01A7A062211777030037CBC1 /* WTAboutUserConfigVC.m */,
+			);
+			path = WTAboutConfig;
+			sourceTree = "<group>";
+		};
+		01BAAC20211C91840037861F /* TalkingData */ = {
+			isa = PBXGroup;
+			children = (
+				01BAAC22211C91AB0037861F /* libTalkingData.a */,
+				01BAAC21211C91AA0037861F /* TalkingData.h */,
+			);
+			path = TalkingData;
+			sourceTree = "<group>";
+		};
+		01D0B04A211100ED00F77C83 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				01D0B08F211112A300F77C83 /* WTAudioCenter.h */,
+				01D0B08A211112A300F77C83 /* WTAudioCenter.m */,
+				01D0B08C211112A300F77C83 /* WTChatTableViewProtcol.h */,
+				01D0B089211112A200F77C83 /* WTCustomAttachmentDecoder.h */,
+				01D0B08E211112A300F77C83 /* WTCustomAttachmentDecoder.m */,
+				01D0B08D211112A300F77C83 /* WTSessionMsgManager.h */,
+				01D0B08B211112A300F77C83 /* WTSessionMsgManager.m */,
+				01D0B0882111129500F77C83 /* Model */,
+				01D0B0872111128C00F77C83 /* View */,
+				01D0B0862111128400F77C83 /* Controller */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		01D0B04E21110C1E00F77C83 /* SessionList */ = {
+			isa = PBXGroup;
+			children = (
+				01D0B05C21110E1000F77C83 /* Model */,
+				01D0B05D21110E1700F77C83 /* View */,
+				01D0B05E21110E1F00F77C83 /* Controller */,
+			);
+			path = SessionList;
+			sourceTree = "<group>";
+		};
+		01D0B05421110CF300F77C83 /* FPSStatus */ = {
+			isa = PBXGroup;
+			children = (
+				01D0B05521110CF300F77C83 /* ALFPSStatus.m */,
+				01D0B05621110CF300F77C83 /* ALFPSStatus.h */,
+			);
+			path = FPSStatus;
+			sourceTree = "<group>";
+		};
+		01D0B05C21110E1000F77C83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01D0B05F21110E3B00F77C83 /* WTSession.h */,
+				01D0B06021110E3B00F77C83 /* WTSession.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		01D0B05D21110E1700F77C83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01D0B06421110E6000F77C83 /* WTSessionListTableView.h */,
+				01D0B06521110E6000F77C83 /* WTSessionListTableView.m */,
+				01D0B06321110E6000F77C83 /* WTSessionListCell.h */,
+				01D0B06221110E6000F77C83 /* WTSessionListCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		01D0B05E21110E1F00F77C83 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				01D0B0752111103500F77C83 /* WTSessionListVC.h */,
+				01D0B0742111103400F77C83 /* WTSessionListVC.m */,
+				01C6F60421589925001FB87A /* WTMessageVC.h */,
+				01C6F60521589925001FB87A /* WTMessageVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		01D0B0862111128400F77C83 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				01D0B0E62111156900F77C83 /* WTSessionVC.h */,
+				01D0B0E72111156900F77C83 /* WTSessionVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		01D0B0872111128C00F77C83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01D0B0A2211113D500F77C83 /* WTRefreshHeader.h */,
+				01D0B0A3211113D500F77C83 /* WTRefreshHeader.m */,
+				01D0B0A8211113D500F77C83 /* WTChatTableView.h */,
+				01D0B0A9211113D600F77C83 /* WTChatTableView.m */,
+				01D0B0A7211113D500F77C83 /* WTBubbleImageView.h */,
+				01D0B0A6211113D500F77C83 /* WTBubbleImageView.m */,
+				01D0B0A4211113D500F77C83 /* WTMessageCell.h */,
+				01D0B0A5211113D500F77C83 /* WTMessageCell.m */,
+				01D0B0AE211113EC00F77C83 /* CellView */,
+				01D0B0AF2111140100F77C83 /* CellContentView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		01D0B0882111129500F77C83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01D0B098211112FE00F77C83 /* WTTimestampModel.h */,
+				01D0B094211112FD00F77C83 /* WTTimestampModel.m */,
+				01D0B09A211112FE00F77C83 /* WTMessageModel.h */,
+				01D0B095211112FD00F77C83 /* WTMessageModel.m */,
+				01D0B099211112FE00F77C83 /* WTChartletModel.h */,
+				01D0B09B211112FE00F77C83 /* WTChartletModel.m */,
+				01D0B097211112FE00F77C83 /* WTChatGoodsModel.h */,
+				01D0B093211112FD00F77C83 /* WTChatGoodsModel.m */,
+				01D0B09C211112FE00F77C83 /* WTChatOrderModel.h */,
+				01D0B096211112FD00F77C83 /* WTChatOrderModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		01D0B0AE211113EC00F77C83 /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				01D0B0B92111145400F77C83 /* WTTimeCellView.h */,
+				01D0B0B72111145400F77C83 /* WTTimeCellView.m */,
+				01D0B0B32111145400F77C83 /* WTCommonMessageCellView.h */,
+				01D0B0B62111145400F77C83 /* WTCommonMessageCellView.m */,
+				01D0B0B02111145300F77C83 /* WTTextMessageCellView.h */,
+				01D0B0B52111145400F77C83 /* WTTextMessageCellView.m */,
+				01D0B0BF2111145500F77C83 /* WTChartletMessageCellView.h */,
+				01D0B0BE2111145500F77C83 /* WTChartletMessageCellView.m */,
+				01D0B0BB2111145500F77C83 /* WTImageMessageCellView.h */,
+				01D0B0B22111145300F77C83 /* WTImageMessageCellView.m */,
+				01D0B0C22111145600F77C83 /* WTAudioMessageCellView.h */,
+				01D0B0C32111145700F77C83 /* WTAudioMessageCellView.m */,
+				01D0B0BD2111145500F77C83 /* WTVideoMessageCellView.h */,
+				01D0B0B82111145400F77C83 /* WTVideoMessageCellView.m */,
+				01D0B0C12111145600F77C83 /* WTSystemMessageCellView.h */,
+				01D0B0B42111145400F77C83 /* WTSystemMessageCellView.m */,
+				01D0B0C02111145500F77C83 /* WTGoodsMessageCellView.h */,
+				01D0B0BA2111145400F77C83 /* WTGoodsMessageCellView.m */,
+				01D0B0BC2111145500F77C83 /* WTOrderMessageCellView.h */,
+				01D0B0B12111145300F77C83 /* WTOrderMessageCellView.m */,
+			);
+			path = CellView;
+			sourceTree = "<group>";
+		};
+		01D0B0AF2111140100F77C83 /* CellContentView */ = {
+			isa = PBXGroup;
+			children = (
+				01D0B0D1211114E900F77C83 /* WTTextMessageContentView.h */,
+				01D0B0DC211114EA00F77C83 /* WTTextMessageContentView.m */,
+				01D0B0D5211114EA00F77C83 /* WTChartletMessageContentView.h */,
+				01D0B0D7211114EA00F77C83 /* WTChartletMessageContentView.m */,
+				01D0B0DA211114EA00F77C83 /* WTImageMessageContentView.h */,
+				01D0B0D3211114E900F77C83 /* WTImageMessageContentView.m */,
+				01D0B0D8211114EA00F77C83 /* WTAudioMessageContentView.h */,
+				01D0B0D2211114E900F77C83 /* WTAudioMessageContentView.m */,
+				01D0B0D4211114EA00F77C83 /* WTVideoMessageContentView.h */,
+				01D0B0DD211114EA00F77C83 /* WTVideoMessageContentView.m */,
+				01D0B0CE211114E900F77C83 /* WTSystemMessageContentView.h */,
+				01D0B0D0211114E900F77C83 /* WTSystemMessageContentView.m */,
+				01D0B0DB211114EA00F77C83 /* WTGoodsMessageContentView.h */,
+				01D0B0D6211114EA00F77C83 /* WTGoodsMessageContentView.m */,
+				01D0B0CF211114E900F77C83 /* WTOrderMessageContentView.h */,
+				01D0B0D9211114EA00F77C83 /* WTOrderMessageContentView.m */,
+			);
+			path = CellContentView;
+			sourceTree = "<group>";
+		};
+		01D0B0F22111DDF300F77C83 /* ScanCode */ = {
+			isa = PBXGroup;
+			children = (
+				01D0B0F32111DE3900F77C83 /* WTScanCodeVC.h */,
+				01D0B0F42111DE3900F77C83 /* WTScanCodeVC.m */,
+			);
+			path = ScanCode;
+			sourceTree = "<group>";
+		};
+		01E0A8E04C06A2EBE56EC091 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01BAAC26211C91E60037861F /* Security.framework */,
+				01BAAC24211C91CA0037861F /* AdSupport.framework */,
+				010708A72112F15900C71980 /* CoreLocation.framework */,
+				01701A3A2110539800D96FE3 /* CoreMotion.framework */,
+				01701A382110538D00D96FE3 /* CFNetwork.framework */,
+				01701A362110538500D96FE3 /* Foundation.framework */,
+				01701A342110537C00D96FE3 /* UIKit.framework */,
+				01701A322110537300D96FE3 /* CoreGraphics.framework */,
+				01701A302110536900D96FE3 /* CoreText.framework */,
+				01701A2E2110533300D96FE3 /* QuartzCore.framework */,
+				01701A2C2110532A00D96FE3 /* CoreTelephony.framework */,
+				01701A2A2110532200D96FE3 /* SystemConfiguration.framework */,
+				01701A28211050E500D96FE3 /* libz.tbd */,
+				01701A26211050CD00D96FE3 /* libc++.tbd */,
+				40C7CB0A2D1FD42154CB4BA1 /* libPods-wutong.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01EC040C210DC06000BD5961 = {
+			isa = PBXGroup;
+			children = (
+				01EC0417210DC06000BD5961 /* wutong */,
+				01EC0430210DC06100BD5961 /* wutongTests */,
+				01EC043B210DC06100BD5961 /* wutongUITests */,
+				01EC0416210DC06000BD5961 /* Products */,
+				51ACEB8B01648D7AD7C95F2B /* Pods */,
+				01E0A8E04C06A2EBE56EC091 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		01EC0416210DC06000BD5961 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01EC0415210DC06000BD5961 /* wutong.app */,
+				01EC042D210DC06100BD5961 /* wutongTests.xctest */,
+				01EC0438210DC06100BD5961 /* wutongUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01EC0417210DC06000BD5961 /* wutong */ = {
+			isa = PBXGroup;
+			children = (
+				01D0B0EB21117E6200F77C83 /* wutong.entitlements */,
+				01084D60210E312200BC7C06 /* API */,
+				0118D6E52114EEE500C0CACE /* Notifications */,
+				0174789B21216807004CD739 /* GuidePage */,
+				01EC0453210DCB0D00BD5961 /* Login */,
+				01084D74210E540800BC7C06 /* Web */,
+				01D0B04E21110C1E00F77C83 /* SessionList */,
+				014346502150BE9E000C3013 /* FriendsList */,
+				01D0B04A211100ED00F77C83 /* Session */,
+				01A7A0322116E2490037CBC1 /* UserHome */,
+				0165286D211A255E003242D9 /* WTWatchVideo */,
+				01D0B0F22111DDF300F77C83 /* ScanCode */,
+				01EC045F210DE8AB00BD5961 /* Global */,
+				01EC045A210DE4EB00BD5961 /* Utils */,
+				01EC0458210DE01A00BD5961 /* Public */,
+				01EC044A210DC1C900BD5961 /* Bases */,
+				01701A2121104F2900D96FE3 /* Lib */,
+				01EC044B210DC1DC00BD5961 /* Resources */,
+			);
+			path = wutong;
+			sourceTree = "<group>";
+		};
+		01EC0430210DC06100BD5961 /* wutongTests */ = {
+			isa = PBXGroup;
+			children = (
+				01EC0431210DC06100BD5961 /* wutongTests.m */,
+				01EC0433210DC06100BD5961 /* Info.plist */,
+			);
+			path = wutongTests;
+			sourceTree = "<group>";
+		};
+		01EC043B210DC06100BD5961 /* wutongUITests */ = {
+			isa = PBXGroup;
+			children = (
+				01EC043C210DC06100BD5961 /* wutongUITests.m */,
+				01EC043E210DC06100BD5961 /* Info.plist */,
+			);
+			path = wutongUITests;
+			sourceTree = "<group>";
+		};
+		01EC044A210DC1C900BD5961 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				01D0B05121110C8400F77C83 /* WTBaseTableView.h */,
+				01D0B04F21110C8400F77C83 /* WTBaseTableView.m */,
+				01EC0418210DC06000BD5961 /* WTAppDelegate.h */,
+				01EC0419210DC06000BD5961 /* WTAppDelegate.m */,
+				01EC0450210DCAD600BD5961 /* WTBaseNavigationController.h */,
+				01EC0451210DCAD600BD5961 /* WTBaseNavigationController.m */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		01EC044B210DC1DC00BD5961 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01D0B05921110D2F00F77C83 /* NIMDemoChartlet.bundle */,
+				01D0B05821110D2E00F77C83 /* NIMKitEmoticon.bundle */,
+				01EC0421210DC06100BD5961 /* Assets.xcassets */,
+				01EC0423210DC06100BD5961 /* LaunchScreen.storyboard */,
+				01EC0426210DC06100BD5961 /* Info.plist */,
+				01EC0427210DC06100BD5961 /* main.m */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		01EC0453210DCB0D00BD5961 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				01084D6D210E42D800BC7C06 /* Model */,
+				01EC0454210DDF0600BD5961 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		01EC0454210DDF0600BD5961 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				01EC0455210DDF2100BD5961 /* WTLoginVC.h */,
+				01EC0456210DDF2100BD5961 /* WTLoginVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		01EC0458210DE01A00BD5961 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				01D0B05321110CAD00F77C83 /* BaseTableViewProtocol.h */,
+				01EC0459210DE04600BD5961 /* WTPrefixHeader.pch */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		01EC045A210DE4EB00BD5961 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				01D0B05421110CF300F77C83 /* FPSStatus */,
+				0150C2212152227C0019F524 /* Spelling */,
+				01D0B0812111117700F77C83 /* WTAuthorityManager.h */,
+				01D0B0802111117700F77C83 /* WTAuthorityManager.m */,
+				01D0B07A2111114200F77C83 /* WTFileLocationHelper.h */,
+				01D0B07D2111114300F77C83 /* WTFileLocationHelper.m */,
+				01D0B07C2111114200F77C83 /* WTShareManager.h */,
+				01D0B07B2111114200F77C83 /* WTShareManager.m */,
+				01D0B06921110EAD00F77C83 /* WTSessionUtil.h */,
+				01D0B06821110EAD00F77C83 /* WTSessionUtil.m */,
+				01D0B06C21110F5900F77C83 /* WTIMKit.h */,
+				01D0B06F21110F5900F77C83 /* WTIMKit.m */,
+				01D0B07021110F5900F77C83 /* WTDataProvider.h */,
+				01D0B06E21110F5900F77C83 /* WTDataProvider.m */,
+				01D0B06D21110F5900F77C83 /* WTIMInfo.h */,
+				01D0B06B21110F5900F77C83 /* WTIMInfo.m */,
+				019075FF212E78AE00E0FE7B /* WTIMKitNotificationFirer.h */,
+				01907600212E78AE00E0FE7B /* WTIMKitNotificationFirer.m */,
+				01907602212E797900E0FE7B /* WTIMKitTimerHolder.h */,
+				01907603212E797900E0FE7B /* WTIMKitTimerHolder.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		01EC045F210DE8AB00BD5961 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				01D0B0842111121800F77C83 /* M80AttributedLabel+WT.h */,
+				01D0B0832111121800F77C83 /* M80AttributedLabel+WT.m */,
+				01D0B0772111113200F77C83 /* UIViewController+Analytics.h */,
+				01D0B0782111113200F77C83 /* UIViewController+Analytics.m */,
+				01EC0460210DE8C800BD5961 /* UIColor+WT.h */,
+				01EC0461210DE8C800BD5961 /* UIColor+WT.m */,
+				01C7C9672110A74B0091A3E5 /* NSString+WT.h */,
+				01C7C9682110A74B0091A3E5 /* NSString+WT.m */,
+				01C7C9642110A6800091A3E5 /* NSDictionary+WT.h */,
+				01C7C9652110A6800091A3E5 /* NSDictionary+WT.m */,
+				017DFC52211C28E80054E7B1 /* WTTagModel.h */,
+				017DFC53211C28E80054E7B1 /* WTTagModel.m */,
+				017DFC55211C49330054E7B1 /* WTTagsView.h */,
+				017DFC56211C49330054E7B1 /* WTTagsView.m */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		51ACEB8B01648D7AD7C95F2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C5A64A08A05E3546E17A7B5 /* Pods-wutong.debug.xcconfig */,
+				C19BDCD0E521D23C50B8C891 /* Pods-wutong.release.xcconfig */,
+				E94A37E450F98DD170D2E3A6 /* Pods-wutong.adhoc.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01EC0414210DC06000BD5961 /* wutong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01EC0441210DC06100BD5961 /* Build configuration list for PBXNativeTarget "wutong" */;
+			buildPhases = (
+				0875DBB51A7E877665A79763 /* [CP] Check Pods Manifest.lock */,
+				01EC0411210DC06000BD5961 /* Sources */,
+				01EC0412210DC06000BD5961 /* Frameworks */,
+				01EC0413210DC06000BD5961 /* Resources */,
+				A2E2EE48B3B68A8E3C3DA179 /* [CP] Embed Pods Frameworks */,
+				9EFE2C1F1096ED89B7688325 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wutong;
+			productName = wutong;
+			productReference = 01EC0415210DC06000BD5961 /* wutong.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01EC042C210DC06100BD5961 /* wutongTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01EC0444210DC06100BD5961 /* Build configuration list for PBXNativeTarget "wutongTests" */;
+			buildPhases = (
+				01EC0429210DC06100BD5961 /* Sources */,
+				01EC042A210DC06100BD5961 /* Frameworks */,
+				01EC042B210DC06100BD5961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01EC042F210DC06100BD5961 /* PBXTargetDependency */,
+			);
+			name = wutongTests;
+			productName = wutongTests;
+			productReference = 01EC042D210DC06100BD5961 /* wutongTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		01EC0437210DC06100BD5961 /* wutongUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01EC0447210DC06100BD5961 /* Build configuration list for PBXNativeTarget "wutongUITests" */;
+			buildPhases = (
+				01EC0434210DC06100BD5961 /* Sources */,
+				01EC0435210DC06100BD5961 /* Frameworks */,
+				01EC0436210DC06100BD5961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01EC043A210DC06100BD5961 /* PBXTargetDependency */,
+			);
+			name = wutongUITests;
+			productName = wutongUITests;
+			productReference = 01EC0438210DC06100BD5961 /* wutongUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01EC040D210DC06000BD5961 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = wutonglife;
+				TargetAttributes = {
+					01EC0414210DC06000BD5961 = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					01EC042C210DC06100BD5961 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 01EC0414210DC06000BD5961;
+					};
+					01EC0437210DC06100BD5961 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 01EC0414210DC06000BD5961;
+					};
+				};
+			};
+			buildConfigurationList = 01EC0410210DC06000BD5961 /* Build configuration list for PBXProject "wutong" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01EC040C210DC06000BD5961;
+			productRefGroup = 01EC0416210DC06000BD5961 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01EC0414210DC06000BD5961 /* wutong */,
+				01EC042C210DC06100BD5961 /* wutongTests */,
+				01EC0437210DC06100BD5961 /* wutongUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01EC0413210DC06000BD5961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0164845E2110B727002B1557 /* AlipaySDK.bundle in Resources */,
+				01EC0425210DC06100BD5961 /* LaunchScreen.storyboard in Resources */,
+				01EC0422210DC06100BD5961 /* Assets.xcassets in Resources */,
+				01D0B05B21110D2F00F77C83 /* NIMDemoChartlet.bundle in Resources */,
+				01D0B05A21110D2F00F77C83 /* NIMKitEmoticon.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01EC042B210DC06100BD5961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01EC0436210DC06100BD5961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0875DBB51A7E877665A79763 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wutong-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EFE2C1F1096ED89B7688325 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-wutong/Pods-wutong-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/NIMSDK/NIMAVChat/Resources/NMCVideoFilter.bundle",
+				"${PODS_ROOT}/SGQRCode/SGQRCode/SGQRCode.bundle",
+				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
+				"${PODS_ROOT}/UMCShare/UMShare/SocialLibraries/Sina/SinaSDK/WeiboSDK.bundle",
+				"${PODS_ROOT}/UMCShare/UMShare/UMSocialUI/UMSocialSDKResources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/WTInputTool/WTInputTool.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/WTSmallVideo/WTSmallVideo.bundle",
+				"${PODS_ROOT}/YBImageBrowser/YBImageBrowser/YBImageBrowser.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NMCVideoFilter.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SGQRCode.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSocialSDKResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WTInputTool.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WTSmallVideo.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YBImageBrowser.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wutong/Pods-wutong-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2E2EE48B3B68A8E3C3DA179 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-wutong/Pods-wutong-frameworks.sh",
+				"${PODS_ROOT}/NIMSDK/NIMSDK/NIMSDK.framework",
+				"${PODS_ROOT}/NIMSDK/NIMAVChat/NIMAVChat.framework",
+				"${PODS_ROOT}/NIMSDK/NIMAVChat/NVS.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIMSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIMAVChat.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wutong/Pods-wutong-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01EC0411210DC06000BD5961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017DFC45211C1F550054E7B1 /* WTUserPictureCell.m in Sources */,
+				01BAAC1F211C88170037861F /* WTTagAPI.m in Sources */,
+				01D0B0F1211199A000F77C83 /* WTPayModel.m in Sources */,
+				01A7A0392116E2B60037CBC1 /* WTUserHomeVC.m in Sources */,
+				01D0B0C92111145700F77C83 /* WTTimeCellView.m in Sources */,
+				01B16944211C636100A2625D /* WTGoodsModel.m in Sources */,
+				01D0B0E0211114EB00F77C83 /* WTImageMessageContentView.m in Sources */,
+				017DFC4B211C20240054E7B1 /* WTUserOrderCell.m in Sources */,
+				01D0B0822111117700F77C83 /* WTAuthorityManager.m in Sources */,
+				01C6F60621589925001FB87A /* WTMessageVC.m in Sources */,
+				01D0B091211112A300F77C83 /* WTSessionMsgManager.m in Sources */,
+				017478A121219C9F004CD739 /* WTGuidePageView.m in Sources */,
+				0118D6E12114D25900C0CACE /* WTAccountAPI.m in Sources */,
+				01D0B0762111103500F77C83 /* WTSessionListVC.m in Sources */,
+				01D0B0CD2111145700F77C83 /* WTAudioMessageCellView.m in Sources */,
+				01A7A0692117A6520037CBC1 /* WTFriendsAPI.m in Sources */,
+				01907604212E797900E0FE7B /* WTIMKitTimerHolder.m in Sources */,
+				01D0B0C82111145700F77C83 /* WTCommonMessageCellView.m in Sources */,
+				01D0B07F2111114300F77C83 /* WTFileLocationHelper.m in Sources */,
+				01A7A0522116F46E0037CBC1 /* WTUserInfoModel.m in Sources */,
+				01A7A0552116F8B80037CBC1 /* WTUserHomeCellModel.m in Sources */,
+				01D0B07E2111114300F77C83 /* WTShareManager.m in Sources */,
+				01D0B0C62111145700F77C83 /* WTSystemMessageCellView.m in Sources */,
+				0118D6EB211599DA00C0CACE /* WTChatCustomWebViewVC.m in Sources */,
+				01D0B0A0211112FE00F77C83 /* WTChatOrderModel.m in Sources */,
+				01EC0462210DE8C800BD5961 /* UIColor+WT.m in Sources */,
+				01D0B06621110E6000F77C83 /* WTSessionListCell.m in Sources */,
+				01D0B06721110E6000F77C83 /* WTSessionListTableView.m in Sources */,
+				01D0B09F211112FE00F77C83 /* WTMessageModel.m in Sources */,
+				01A7A03C2116E2C80037CBC1 /* WTAdviserHomeVC.m in Sources */,
+				01C7C95D2110A2770091A3E5 /* WTShareGoodsModel.m in Sources */,
+				01D0B0792111113200F77C83 /* UIViewController+Analytics.m in Sources */,
+				01D0B0DF211114EB00F77C83 /* WTAudioMessageContentView.m in Sources */,
+				01D0B0E4211114EB00F77C83 /* WTTextMessageContentView.m in Sources */,
+				0118D6EE2115B96D00C0CACE /* WTAppVersionAPI.m in Sources */,
+				0150C22D215230200019F524 /* WTGroupedContacts.m in Sources */,
+				01D0B05221110C8500F77C83 /* WTBaseTableView.m in Sources */,
+				01D0B0C42111145700F77C83 /* WTOrderMessageCellView.m in Sources */,
+				01D0B0E5211114EB00F77C83 /* WTVideoMessageContentView.m in Sources */,
+				01D0B07221110F5900F77C83 /* WTDataProvider.m in Sources */,
+				01D0B0C52111145700F77C83 /* WTImageMessageCellView.m in Sources */,
+				017DFC4E211C22C00054E7B1 /* WTUserFunctionSectionView.m in Sources */,
+				01A4E1612125B0F000012FF4 /* WTGuidePageVC.m in Sources */,
+				01D0B090211112A300F77C83 /* WTAudioCenter.m in Sources */,
+				01D0B0852111121800F77C83 /* M80AttributedLabel+WT.m in Sources */,
+				01D0B0AB211113D600F77C83 /* WTMessageCell.m in Sources */,
+				01C7C9692110A74B0091A3E5 /* NSString+WT.m in Sources */,
+				01D0B0CC2111145700F77C83 /* WTChartletMessageCellView.m in Sources */,
+				0118D6E42114DFAA00C0CACE /* WTAccountManager.m in Sources */,
+				01D0B0F52111DE3900F77C83 /* WTScanCodeVC.m in Sources */,
+				01A7A066211794FE0037CBC1 /* WTUploadImageAPI.m in Sources */,
+				01D0B0AC211113D600F77C83 /* WTBubbleImageView.m in Sources */,
+				01D0B07121110F5900F77C83 /* WTIMInfo.m in Sources */,
+				01D0B0E1211114EB00F77C83 /* WTGoodsMessageContentView.m in Sources */,
+				0118D6E82114EF3800C0CACE /* WTNotificationCenter.m in Sources */,
+				01A7A06C2117B3650037CBC1 /* WTAdAPI.m in Sources */,
+				01D0B0C72111145700F77C83 /* WTTextMessageCellView.m in Sources */,
+				01EC0452210DCAD600BD5961 /* WTBaseNavigationController.m in Sources */,
+				01D0B0CB2111145700F77C83 /* WTGoodsMessageCellView.m in Sources */,
+				01B16941211C62AF00A2625D /* WTUserOrderModel.m in Sources */,
+				01A7A063211777030037CBC1 /* WTAboutUserConfigVC.m in Sources */,
+				0150C22A21522CF30019F524 /* WTGroupedDataCollection.m in Sources */,
+				01C7C9662110A6800091A3E5 /* NSDictionary+WT.m in Sources */,
+				01D0B06121110E3B00F77C83 /* WTSession.m in Sources */,
+				01D0B06A21110EAD00F77C83 /* WTSessionUtil.m in Sources */,
+				01A7A0432116EEBE0037CBC1 /* WTHeadIconCell.m in Sources */,
+				01652872211A25BE003242D9 /* WTPlayVideoVC.m in Sources */,
+				01D0B0A1211112FE00F77C83 /* WTChartletModel.m in Sources */,
+				01D0B0E3211114EB00F77C83 /* WTOrderMessageContentView.m in Sources */,
+				01D0B0AD211113D600F77C83 /* WTChatTableView.m in Sources */,
+				01D0B0E2211114EB00F77C83 /* WTChartletMessageContentView.m in Sources */,
+				01D0B0E82111156900F77C83 /* WTSessionVC.m in Sources */,
+				01652869211959BA003242D9 /* WTContactAccountModel.m in Sources */,
+				01D0B0AA211113D600F77C83 /* WTRefreshHeader.m in Sources */,
+				017DFC57211C49330054E7B1 /* WTTagsView.m in Sources */,
+				01D0B07321110F5900F77C83 /* WTIMKit.m in Sources */,
+				01D0B0DE211114EB00F77C83 /* WTSystemMessageContentView.m in Sources */,
+				010F4DE1210E5F59008F79A4 /* WTScriptMessageHandler.m in Sources */,
+				01EC0428210DC06100BD5961 /* main.m in Sources */,
+				01A7A05F21176CE00037CBC1 /* WTHomeToolBar.m in Sources */,
+				01D0B05721110CF300F77C83 /* ALFPSStatus.m in Sources */,
+				01D0B0CA2111145700F77C83 /* WTVideoMessageCellView.m in Sources */,
+				014346562150BEF1000C3013 /* WTFriendsListVC.m in Sources */,
+				01084D78210E546600BC7C06 /* WTWebViewVC.m in Sources */,
+				010F4DE4210E60F4008F79A4 /* WTWebViewConfiguration.m in Sources */,
+				017DFC54211C28E80054E7B1 /* WTTagModel.m in Sources */,
+				01652875211A25D9003242D9 /* WTPlayVideoView.m in Sources */,
+				01D0B09D211112FE00F77C83 /* WTChatGoodsModel.m in Sources */,
+				01EC041A210DC06000BD5961 /* WTAppDelegate.m in Sources */,
+				017478A42121B8FD004CD739 /* WTAnotherWebViewVC.m in Sources */,
+				0150C227215226470019F524 /* WTSpellingCenter.m in Sources */,
+				01A7A04F2116F1540037CBC1 /* WTInfoNormalCell.m in Sources */,
+				017DFC48211C20050054E7B1 /* WTUserTagCell.m in Sources */,
+				0118D6DB2114D0E900C0CACE /* WTLoginAPI.m in Sources */,
+				01D0B092211112A300F77C83 /* WTCustomAttachmentDecoder.m in Sources */,
+				01EC0457210DDF2100BD5961 /* WTLoginVC.m in Sources */,
+				0150C220215221040019F524 /* WTContactDataMember.m in Sources */,
+				01D0B09E211112FE00F77C83 /* WTTimestampModel.m in Sources */,
+				01084D7C210E54A500BC7C06 /* WTWebView.m in Sources */,
+				01A7A0402116E5E20037CBC1 /* WTUserHomeTableView.m in Sources */,
+				0150C224215222CA0019F524 /* WTPinyinConverter.m in Sources */,
+				01907601212E78AE00E0FE7B /* WTIMKitNotificationFirer.m in Sources */,
+				017DFC51211C24330054E7B1 /* WTUserPictureModel.m in Sources */,
+				01A7A05C21176A170037CBC1 /* WTAdviserHomeTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01EC0429210DC06100BD5961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01EC0432210DC06100BD5961 /* wutongTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01EC0434210DC06100BD5961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01EC043D210DC06100BD5961 /* wutongUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01EC042F210DC06100BD5961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01EC0414210DC06000BD5961 /* wutong */;
+			targetProxy = 01EC042E210DC06100BD5961 /* PBXContainerItemProxy */;
+		};
+		01EC043A210DC06100BD5961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01EC0414210DC06000BD5961 /* wutong */;
+			targetProxy = 01EC0439210DC06100BD5961 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01EC0423210DC06100BD5961 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01EC0424210DC06100BD5961 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01EC043F210DC06100BD5961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		01EC0440210DC06100BD5961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01EC0442210DC06100BD5961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C5A64A08A05E3546E17A7B5 /* Pods-wutong.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = wutong/wutong.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 11;
+				DEVELOPMENT_TEAM = 4YWUU77P99;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wutong/Lib",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/wutong/Public/WTPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/wutong/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wutong/Lib/TalkingData",
+					"$(PROJECT_DIR)/wutong/Lib/Wechat",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wutonglife.wutong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = WT_Test;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "";
+			};
+			name = Debug;
+		};
+		01EC0443210DC06100BD5961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C19BDCD0E521D23C50B8C891 /* Pods-wutong.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = wutong/wutong.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 11;
+				DEVELOPMENT_TEAM = 4YWUU77P99;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wutong/Lib",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/wutong/Public/WTPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/wutong/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wutong/Lib/TalkingData",
+					"$(PROJECT_DIR)/wutong/Lib/Wechat",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wutonglife.wutong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = WT_AppStore;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "";
+			};
+			name = Release;
+		};
+		01EC0445210DC06100BD5961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = wutongTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wutonglife.wutongTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wutong.app/wutong";
+			};
+			name = Debug;
+		};
+		01EC0446210DC06100BD5961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = wutongTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wutonglife.wutongTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wutong.app/wutong";
+			};
+			name = Release;
+		};
+		01EC0448210DC06100BD5961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = wutongUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wutonglife.wutongUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wutong;
+			};
+			name = Debug;
+		};
+		01EC0449210DC06100BD5961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = wutongUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wutonglife.wutongUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wutong;
+			};
+			name = Release;
+		};
+		01EC044C210DC41500BD5961 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		01EC044D210DC41500BD5961 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E94A37E450F98DD170D2E3A6 /* Pods-wutong.adhoc.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = wutong/wutong.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 11;
+				DEVELOPMENT_TEAM = 4YWUU77P99;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wutong/Lib",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/wutong/Public/WTPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/wutong/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wutong/Lib/TalkingData",
+					"$(PROJECT_DIR)/wutong/Lib/Wechat",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wutonglife.wutong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = WT_AdHoc;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "";
+			};
+			name = AdHoc;
+		};
+		01EC044E210DC41500BD5961 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = wutongTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wutonglife.wutongTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wutong.app/wutong";
+			};
+			name = AdHoc;
+		};
+		01EC044F210DC41500BD5961 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = wutongUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wutonglife.wutongUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wutong;
+			};
+			name = AdHoc;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01EC0410210DC06000BD5961 /* Build configuration list for PBXProject "wutong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01EC043F210DC06100BD5961 /* Debug */,
+				01EC0440210DC06100BD5961 /* Release */,
+				01EC044C210DC41500BD5961 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01EC0441210DC06100BD5961 /* Build configuration list for PBXNativeTarget "wutong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01EC0442210DC06100BD5961 /* Debug */,
+				01EC0443210DC06100BD5961 /* Release */,
+				01EC044D210DC41500BD5961 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01EC0444210DC06100BD5961 /* Build configuration list for PBXNativeTarget "wutongTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01EC0445210DC06100BD5961 /* Debug */,
+				01EC0446210DC06100BD5961 /* Release */,
+				01EC044E210DC41500BD5961 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01EC0447210DC06100BD5961 /* Build configuration list for PBXNativeTarget "wutongUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01EC0448210DC06100BD5961 /* Debug */,
+				01EC0449210DC06100BD5961 /* Release */,
+				01EC044F210DC41500BD5961 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01EC040D210DC06000BD5961 /* Project object */;
+}
