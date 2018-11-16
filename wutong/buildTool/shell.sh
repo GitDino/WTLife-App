@@ -16,42 +16,14 @@ cd ..
 # 工程绝对路径
 project_path=$(cd `dirname $0`; pwd)
 
-echo "Place enter your project name:"
-
-# 读取终端输入并存入 name 变量，并赋值于 project_name 与 scheme_name
-read name
-project_name=$name
-scheme_name=$name
+project_name=wutong
+scheme_name=wutong
 
 # build文件夹（存放.xcarchive文件）路径
 build_path=${project_path}/buildTool/build
 
-echo "Place enter the number you want to export: [ 1:app-store 2:ad-hoc]"
-
-# 读取终端输入并进行逻辑判断
-read number
-while([[ $number != 1 ]] && [[ $number != 2 ]])
-do
-echo "Error! Should enter 1 or 2"
-echo "Place enter the number you want to export ? [ 1:app-store 2:ad-hoc] "
-read number
-done
-
-# 根据 number 的值读取 plist 配置文件路径
-if [ $number == 1 ];
-then
-development_mode=Release
-exportOptionsPlistPath=${project_path}/buildTool/exportAppstore.plist
-echo "Please input your AppStore account number: "
-read account_number
-echo "Please input your APP-Specific Passwords:"
-read specific_pwd
-else
 development_mode=Debug
 exportOptionsPlistPath=${project_path}/buildTool/exportAdHoc.plist
-echo "Plaese input firim's API-Token:"
-read fir_token
-fi
 
 # 获取导出 ipa 包路径
 exportIpaPath=${project_path}/buildTool/IPA/${development_mode}
@@ -108,17 +80,9 @@ echo ' +++++++++++++++++ '
 echo ' + 开始发布ipa包 + '
 echo ' +++++++++++++++++ '
 
-if [ $number == 1 ];
-then
-# 验证并上传到 AppStore
-altoolPath="/Applications/Xcode.app/Contents/Applications/Application Loader.app/Contents/Frameworks/ITunesSoftwareService.framework/Versions/A/Support/altool"
-"$altoolPath" --validate-app -f ${exportIpaPath}/${scheme_name}.ipa -u $account_number -p $specific_pwd
-"$altoolPath" --upload-app -f ${exportIpaPath}/${scheme_name}.ipa -u  $account_number -p $specific_pwd
-else
 #上传到Fir
 # 将XXX替换成自己的Fir平台的token
-fir login -T $fir_token
+fir login -T 57600f98793ec86b65820e67788013a2
 fir publish $exportIpaPath/$scheme_name.ipa
-fi
 
 exit 0
